@@ -9,7 +9,6 @@
 float xRotated = 90.0, yRotated = 0.0, zRotated = 0.0, direction = 0.0;
 float xPosCloud=-5, yPosSun=-5, xPosSun=-5, xPosTree=-1, yPosTree = -1;
 
-void timer(int);
 
 void keydirect(int key, int x, int y){
 
