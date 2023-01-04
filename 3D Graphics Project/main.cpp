@@ -6,7 +6,7 @@
 #include <math.h>
 
 
-float xRotated = 90.0, yRotated = 0.0, zRotated = 0.0, direction = 0.0;
+float direction = 0.0;
 float xPosCloud=-5, yPosSun=-5, xPosSun=-5, xPosTree=-1, yPosTree = -1;
 
 
@@ -246,7 +246,6 @@ void display (void)
 
 void idleFunc (void)
 {
-    zRotated += 1;
     glutPostRedisplay();
 }
 
@@ -301,7 +300,7 @@ int main (int argc, char **argv)
     glRotatef(1,1,0,0);
     glClearColor (1.0, 1.0, 1.0, 0.0);
 
-//    glutReshapeFunc (reshapeFunc);
+//  glutReshapeFunc (reshapeFunc);
     glutIdleFunc    (idleFunc);
 
     glClearColor(1,1,1,1);
