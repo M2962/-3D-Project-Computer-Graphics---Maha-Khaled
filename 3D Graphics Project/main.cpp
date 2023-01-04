@@ -301,7 +301,8 @@ int main (int argc, char **argv)
     glClearColor (1.0, 1.0, 1.0, 0.0);
 
 //  glutReshapeFunc (reshapeFunc);
-    glutIdleFunc    (idleFunc);
+//    glutIdleFunc(idleFunc);
+     glutPostRedisplay();
 
     glClearColor(1,1,1,1);
     texture(); // Lighting and textures
