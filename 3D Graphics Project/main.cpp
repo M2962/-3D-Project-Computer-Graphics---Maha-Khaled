@@ -6,8 +6,7 @@
 #include <math.h>
 
 
-float direction = 0.0;
-float xPosCloud=-5, yPosSun=-5, xPosSun=-5, xPosTree=-1, yPosTree = -1;
+float direction = 0.0, xPosCloud=-5, yPosSun=-5, xPosSun=-5, xPosTree=-1, yPosTree = -1;
 
 
 void keydirect(int key, int x, int y){
@@ -16,7 +15,7 @@ void keydirect(int key, int x, int y){
     else if(key==GLUT_KEY_RIGHT) direction+=1;
 }
 
-void reshapeFunc (int w, int h)
+void reshapeFunc(int w, int h)
 {
     glViewport(0,0,(GLsizei)w,(GLsizei)h);
     glMatrixMode(GL_PROJECTION);
@@ -40,7 +39,7 @@ void timer(int){
 
 }
 
-void car (){
+void car(){
 
     glBegin(GL_QUADS);
 
@@ -193,8 +192,7 @@ void cloud(){
     glPopMatrix();
 }
 
-void display (void)
-{
+void display (void){
     glClearColor(0.67,0.84,0.90,0);
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
