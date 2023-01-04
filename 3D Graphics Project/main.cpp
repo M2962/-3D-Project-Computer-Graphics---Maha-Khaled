@@ -299,7 +299,7 @@ int main (int argc, char **argv)
     glutPostRedisplay();
 
     glClearColor(1,1,1,1);
-//    texture(); // Lighting and textures
+    texture(); // Lighting and textures
 
 
     glutMainLoop();
