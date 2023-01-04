@@ -244,10 +244,6 @@ void display (void)
 
 }
 
-void idleFunc (void)
-{
-    glutPostRedisplay();
-}
 
 void texture (void){
 
