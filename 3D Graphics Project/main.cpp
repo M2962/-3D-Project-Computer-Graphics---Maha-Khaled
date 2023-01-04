@@ -8,7 +8,6 @@
 
 float direction = 0.0, xPosCloud=-5, yPosSun=-5, xPosSun=-5, xPosTree=-1, yPosTree = -1;
 
-
 void keydirect(int key, int x, int y){
 
     if (key == GLUT_KEY_LEFT) direction-=1;
@@ -293,7 +292,7 @@ int main (int argc, char **argv)
     glRotatef(1,1,0,0);
     glClearColor (1.0, 1.0, 1.0, 0.0);
 
-//  glutReshapeFunc (reshapeFunc);
+
     glutPostRedisplay();
 
     glClearColor(1,1,1,1);
